@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+*{
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  background-color: #FFC017;
+  overflow: hidden;
 }
+.header-heading {
+  font-family: sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  color: #000000;
+}
+.header-p{
+  font-size: 17px;
+  color: #000000;
+}
+.container-fluid header .navbar{
+  background: none;
+}
+.language-select{
+  background: none;
+  border: none;
+}
+.language-select option{
+  border: none;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.nav-link:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+.first-nav-link{
+  margin-left: 50px;
+}
+.header-text-box{
+  margin: 120px 0px;
+}
+.relative-box{
+  position: relative;
+  box-sizing: border-box;
+}
+.absolute-box{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.my-card{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 25px;
+  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);*/
+  transition: 0.2s;
+}
+.my-card:hover{
+  box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.29);
+  cursor: pointer;
+}
+.date-btn{
+  border: none;
+  border-radius: 10px;
+  background-color: #F6F7F8;
+  padding-inline: 12px 20px;
+  margin-bottom: 0px;
+}
+.left-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: start;
+}
+.left-box h4{
+  font-weight: 700;
+}
+.left-box h5{
+  font-weight: 700;
+  transition: 0.3s;
+}
+.left-box h5:hover{
+  color: #FFC017;
+  cursor: pointer;
+}
+.left-box h4{
+  transition: 0.2s;
+}
+.left-box h4:hover{
+  color: #FFC017;
+  cursor: pointer;
+}
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: #222;
+}
+.footer-man-name{
+  color: #FFF;
+}
+.footer-man-name-p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #FFF;
+}
+.my-input-group{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  /*border: 1px solid black;*/
+  overflow: hidden;
+  display: flex;
+}
+.my-input-group input{
+  border-radius: 0px;
+}
+.my-input{
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 0px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.my-input:focus{
+  outline: none;
+}
+.my-button{
+  box-sizing: border-box;
+  width: 150px;
+  height: auto;
+  background-color: #FFC017;
+  border: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.my-button.two{
+  color: #FFF;
+  box-sizing: border-box;
+  width: 150px;
+  height: auto;
+  background-color: #000;
+  border: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.my-button:hover{
+  opacity: 70%;
+}
+.second-sending-place{
+  background-color: #F6F7F8;
+}
+.icon-btn{
+  width: 100%;
+  height: 50px;
+  background-color: #F6F7F8;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.icon-btn:hover{
+  background-color: #FFC017;
+  color: #000;
+}
+.right-data{
+  border-bottom: 1px solid #c9cacb;
+}
+.right-data-p{
+  color: #000;
+  transition: 0.2s;
+}
+.right-data-p:hover{
+  color: #FFC017;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.iframe-sm{
+  border-radius: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 992px) and (min-width: 768px){
+  .relative-box{
+    width: 600px;
+    /*transform: scale(1.7);*/
+    right: -200px;
+    bottom: 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 767px) and (min-width: 650px){
+  .relative-box{
+    width: 600px;
+    /*transform: scale(1.7);*/
+    right: -200px;
+    bottom: 0;
+  }
+  .header-heading{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 649px) and (min-width: 300px){
+  .relative-box{
+    width: 600px;
+    /*transform: scale(1.7);*/
+    right: -100px;
+    bottom: 0;
+  }
+  .header-heading{
+    font-size: 40px;
+  }
+  .header-p{
+    font-size: 16px;
+  }
+  .header-btn{
+    margin-bottom: 100px;
+  }
+  .my-card{
+    padding: 14px;
+  }
+  .my-card h5{
+    font-size: 18px;
   }
 }
